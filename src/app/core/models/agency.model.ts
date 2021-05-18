@@ -7,4 +7,5 @@ export class AgencyModel {
     address!: string;
     lat!: number;
     lon!: number;
+    image!: string;
 }
