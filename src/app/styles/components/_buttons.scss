@@ -1,0 +1,36 @@
+.pr-button {
+    background-color: #27c2bb;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: font-bold;
+    transition: .3s all ease;
+    border-radius: 3px;
+    border: 2px solid #27c2bb;
+}
+
+.pr-button.pr-button--secondary {
+    background-color: white;
+    color: #27c2bb;
+}
+
+.pr-button:hover {
+    background-color: #169c96;
+    border: 2px solid #169c96;
+}
+
+.pr-button.pr-button--secondary:hover {
+    background-color: rgb(240, 240, 240);
+    border: 2px solid #27c2bb;
+}
+
+.pr-button:disabled {
+    background-color: #c4c4c4 !important;
+    border: 2px solid #c4c4c4 !important;
+}
+
+.pr-button.pr-button--secondary:disabled {
+    color: white !important;
+    background-color: #c4c4c4 !important;
+    border: 2px solid #c4c4c4 !important;
+}

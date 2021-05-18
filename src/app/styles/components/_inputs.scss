@@ -1,0 +1,21 @@
+.Input__component input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #27c2bb;
+    padding: 12px;
+    font-size: 14px;
+    font-family: font-regular;
+}
+
+.Input__component input.error {
+    border: 2px solid #ff7777;
+}
+
+.Input__component select {
+    width: 100%;
+    outline: none;
+    border: 2px solid #27c2bb;
+    padding: 12px;
+    font-size: 14px;
+    font-family: font-regular;
+}

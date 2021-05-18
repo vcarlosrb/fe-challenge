@@ -1,0 +1,18 @@
+.Loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    height: 100%;
+    div {
+        height: 100%;
+        img {
+            width: 250px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

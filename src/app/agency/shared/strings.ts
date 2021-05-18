@@ -1,0 +1,3 @@
+export const BODY_MEASUREMENTS_NOTIFICATION_ERROR = 'Si las medidas y tallas no son las correctas, haz click en esta notificación.';
+export const MEASUREMENTS_NOT_GENERATED = 'Tus medidas corporales y tallas no han sido estimados, haz click aquí para ver tus fotos.';
+export const SEGMENTATION_IMAGE_ERROR = 'Al parecer las fotos tomadas no son las adecuadas. Si las siluetas de las fotos tienen manchas adicionales que no corresponden al contorno del cuerpo, haz click aquí para ver las recomendaciones y tomar nuevas fotos.';

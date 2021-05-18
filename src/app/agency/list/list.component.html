@@ -1,0 +1,13 @@
+<app-navbar title="Agencias"></app-navbar>
+<div>
+    <mat-selection-list #shoes [multiple]="false">
+        <div class="u-padding-x-8 u-padding-y-4">
+            <mat-list-option *ngFor="let agency of agencies" class="u-bg-white u-margin-b-8" style="height: auto;"
+                (click)="goToAgencyDetailt(agency)">
+                <div>
+                    <app-agency-item [agency]="agency"></app-agency-item>
+                </div>
+            </mat-list-option>
+        </div>
+    </mat-selection-list>
+</div>

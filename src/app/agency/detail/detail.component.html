@@ -1,0 +1,52 @@
+<app-navbar [backButton]="true" title="Detalle de la Agencia"></app-navbar>
+<div class="u-padding-16">
+    <div class="u-padding-16 u-bg-white">
+        <form [formGroup]="agencyForm">
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Agencia</mat-label>
+                <input matInput placeholder="Nombre de la agencia" formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Dirección</mat-label>
+                <input matInput placeholder="Direccion de la agencia" formControlName="address">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Distrito</mat-label>
+                <input matInput placeholder="Distrito de la agencia" formControlName="district">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Provincia</mat-label>
+                <input matInput placeholder="Provincia de la agencia" formControlName="province">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Departamento</mat-label>
+                <input matInput placeholder="Departamento de la agencia" formControlName="department">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Latitud</mat-label>
+                <input matInput placeholder="Latitud de la agencia" formControlName="lat">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="width-100">
+                <mat-label>Longitud</mat-label>
+                <input matInput placeholder="Longitud de la agencia" formControlName="lon">
+            </mat-form-field>
+        </form>
+    </div>
+    <div class="u-margin-t-16">
+        <div style="overflow: hidden;">
+            <div style="float: left;" class="width-50 u-padding-8">
+                <button class="width-100" mat-raised-button color="primary" [disabled]="!agencyForm.valid"
+                    (click)="updateAgency(agencyForm.value)">Actualizar</button>
+            </div>
+            <div style="float: left;" class="width-50 u-padding-8">
+                <button class="width-100" (click)="setOriginalValues(agency)" mat-stroked-button
+                    color="warn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <agm-map [latitude]="agency.lon" [longitude]="agency.lat" style="height: 300px;" [zoom]="15" *ngIf="agency.lat">
+            <agm-marker [latitude]="agency.lon" [longitude]="agency.lat"></agm-marker>
+        </agm-map>
+    </div>
+</div>
